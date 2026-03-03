@@ -1,8 +1,8 @@
 class Fgm < Formula
   desc "Fast CLI for Figma - export assets, compare designs, extract tokens"
   homepage "https://github.com/dan-hart/fgm"
-  url "https://github.com/dan-hart/fgm/archive/refs/tags/v1.3.2.tar.gz"
-  sha256 "a22fdfffd7719b54f691c3498024f8f7c67c167bd88c0b9b15ebca1ee1831c0c"
+  url "https://github.com/dan-hart/fgm/archive/refs/tags/v1.3.3.tar.gz"
+  sha256 "43f835c57615ae066401334fa2bfd67187f3b65a61030ad6843fe6b04bbd0b70"
   license "GPL-3.0-or-later"
 
   depends_on "rust" => :build
