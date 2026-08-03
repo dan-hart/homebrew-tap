@@ -1,8 +1,8 @@
 class Reprise < Formula
   desc "Fast, feature-rich CLI for Bitrise"
   homepage "https://github.com/dan-hart/reprise"
-  url "https://github.com/dan-hart/reprise/archive/refs/tags/v0.1.9.tar.gz"
-  sha256 "2908e342b416135ac726db22a4aca31f988dc40f453307af21ab5c96133fb358"
+  url "https://github.com/dan-hart/reprise/archive/refs/tags/v0.1.10.tar.gz"
+  sha256 "2c995cddf77d0e079a6de9ff112b4bd11f5f0e9e1443393e9ccff2df9bb461f7"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
