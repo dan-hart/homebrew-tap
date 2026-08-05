@@ -1,8 +1,8 @@
 class Clings < Formula
   desc "Feature-rich CLI for Things 3 on macOS"
   homepage "https://github.com/dan-hart/clings"
-  url "https://github.com/dan-hart/clings/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "85bcba49004186c5c8617a96680651a8c0669aaa91cbae651703676d6be013b8"
+  url "https://github.com/dan-hart/clings/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "9c9007efe44f36f3ecc561389f844736978e8824df910cf5dd476ae3281f2973"
   license "GPL-3.0-or-later"
 
   depends_on xcode: ["15.0", :build]
