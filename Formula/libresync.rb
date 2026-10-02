@@ -1,8 +1,8 @@
 class Libresync < Formula
   desc "Device-to-device local-first sync engine and CLI with end-to-end encryption"
   homepage "https://github.com/dan-hart/LibreSync"
-  url "https://github.com/dan-hart/LibreSync/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "96090bb60370891ba87c4c3e219f3db5a921107d55c90800bcdc12dca38880aa"
+  url "https://github.com/dan-hart/LibreSync/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "266e924defb26aa163cd2c4338b438f6ed2149b8f281ed10b0efa9fd79257a58"
   license "AGPL-3.0-only"
   head "https://github.com/dan-hart/LibreSync.git", branch: "main"
 
