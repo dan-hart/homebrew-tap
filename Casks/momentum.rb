@@ -1,12 +1,12 @@
 # Rendered by build-aux/release.py homebrew for the dan-hart/homebrew-tap repository.
 # brew install --cask dan-hart/tap/momentum
 cask "momentum" do
-  version "0.4.0"
-  sha256 "878df46fa463392adf446cd8fc708cc7a744fed168d914328c11a09f4f1b76e8"
+  version "0.4.11"
+  sha256 "7d1929072875764f457fecfadfa8227d7ee49f81b3c2f68ef1c64d05c9ab8319"
 
   url "https://github.com/dan-hart/momentum/releases/download/v#{version}/Momentum-v#{version}-macos.zip"
   name "Momentum"
-  desc "Plan your day: native task planner that syncs with Super Productivity"
+  desc "Plan your day: native task planner with optional sync"
   homepage "https://github.com/dan-hart/momentum"
 
   livecheck do
