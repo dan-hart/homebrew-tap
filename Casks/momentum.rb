@@ -1,8 +1,8 @@
 # Rendered by build-aux/release.py homebrew for the dan-hart/homebrew-tap repository.
 # brew install --cask dan-hart/tap/momentum
 cask "momentum" do
-  version "0.4.13"
-  sha256 "ce50aefdde5531a01f4c519726c94eee9aa2e85fb273f88cbbdf7f96a11b7f64"
+  version "0.4.14"
+  sha256 "89b7d1594b60f3df7a30df699743382d37c4c417217abc3c65d9a8a03c7359fb"
 
   url "https://github.com/dan-hart/momentum/releases/download/v#{version}/Momentum-v#{version}-macos.zip"
   name "Momentum"
