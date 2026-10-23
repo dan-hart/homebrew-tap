@@ -7,18 +7,18 @@
 class MomentumCli < Formula
   desc "Command-line companion for Momentum: add, list, complete and sync tasks"
   homepage "https://github.com/dan-hart/momentum"
-  url "https://github.com/dan-hart/momentum/releases/download/v0.4.11/mo-v0.4.11-macos-universal.tar.gz"
-  sha256 "d088eeec7bc5cdeed3cd5288cbde4d6a365e3f691f5765ea7bd985001db27524"
+  url "https://github.com/dan-hart/momentum/releases/download/v0.4.12/mo-v0.4.12-macos-universal.tar.gz"
+  sha256 "338b1c4b06148e7f8a213d05a641db3160898d9c4e6462451ebdf4e5e455c388"
   license "GPL-3.0-or-later"
 
   on_linux do
     on_intel do
-      url "https://github.com/dan-hart/momentum/releases/download/v0.4.11/mo-v0.4.11-linux-x86_64.tar.gz"
-      sha256 "d366793f40d492f7341ee0a2253ffe1f79f281b16f7c912fc1208107b2f2eb3e"
+      url "https://github.com/dan-hart/momentum/releases/download/v0.4.12/mo-v0.4.12-linux-x86_64.tar.gz"
+      sha256 "8310186cb427bf2f1d537eee700b1abe6764b8e36b64af09def67b2340695d72"
     end
     on_arm do
-      url "https://github.com/dan-hart/momentum/releases/download/v0.4.11/mo-v0.4.11-linux-aarch64.tar.gz"
-      sha256 "866237e095ba2f5dd8954443b3e1b5e2bfe765e79891e1c3dfa2d972a6b3a2d9"
+      url "https://github.com/dan-hart/momentum/releases/download/v0.4.12/mo-v0.4.12-linux-aarch64.tar.gz"
+      sha256 "72cb185c4967c83e545472d775927075d404ac98f2654aa62957fd63331c02f9"
     end
   end
 
