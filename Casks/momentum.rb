@@ -1,8 +1,8 @@
 # Rendered by build-aux/release.py homebrew for the dan-hart/homebrew-tap repository.
 # brew install --cask dan-hart/tap/momentum
 cask "momentum" do
-  version "0.4.14"
-  sha256 "89b7d1594b60f3df7a30df699743382d37c4c417217abc3c65d9a8a03c7359fb"
+  version "0.4.16"
+  sha256 "bb481f516fd56cc7e920f0e611c25af2e41fe889a673daaa6ccfb09894563f7b"
 
   url "https://github.com/dan-hart/momentum/releases/download/v#{version}/Momentum-v#{version}-macos.zip"
   name "Momentum"
@@ -27,9 +27,4 @@ cask "momentum" do
     "~/Library/Preferences/com.codedbydan.Momentum.plist",
     "~/Library/Saved Application State/com.codedbydan.Momentum.savedState",
   ]
-
-  caveats <<~EOS
-    This build is signed ad hoc, not notarized by Apple. macOS will refuse to open it
-    unless you install with --no-quarantine or allow it under System Settings > Privacy & Security.
-  EOS
 end
