@@ -5,13 +5,13 @@ class Emask < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/dan-hart/emask/releases/download/v0.1.1/emask-0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "53ff5034683b68034b2a1885c423505b62f16b59997b5ef57cf5b70c710567cd"
+      url "https://github.com/dan-hart/emask/releases/download/v0.1.2/emask-0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "32dfc0205a2876acbe90488dca531140d6779b1c6c1aeada5ed9171f8ad62208"
     end
 
     on_intel do
-      url "https://github.com/dan-hart/emask/releases/download/v0.1.1/emask-0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "95583e7d0dc996b59064c84506c0f76a9648d31c7c1f711616e3e05ae748f42c"
+      url "https://github.com/dan-hart/emask/releases/download/v0.1.2/emask-0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "a78c1b58c2ece5a100de2d3f241bc85ec490b9895c1bcab14178dd818f4dacc4"
     end
   end
 
@@ -19,18 +19,33 @@ class Emask < Formula
     depends_on arch: :x86_64
 
     on_intel do
-      url "https://github.com/dan-hart/emask/releases/download/v0.1.1/emask-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "407497c29daeaa827facfae988c9acd78a7980f269286a2330e37a3e40fdbf94"
+      url "https://github.com/dan-hart/emask/releases/download/v0.1.2/emask-0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "cefdb5e5f063e475b6c0f21748052b85ae80808d0065b63b6958ef477d6fd021"
     end
   end
 
   def install
     bin.install "emask"
-    doc.install "README.md", "CHANGELOG.md"
+    doc.install "README.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md", "LICENSE", "docs"
     generate_completions_from_executable(bin/"emask", "completions")
   end
 
+  def caveats
+    <<~EOS
+      Connect your email services:
+        emask setup
+
+      View commands and Homebrew installation help:
+        emask --help
+
+      Installed Homebrew guide:
+        #{doc}/docs/homebrew.md
+    EOS
+  end
+
   test do
+    assert_path_exists doc/"docs/homebrew.md"
+    assert_path_exists doc/"docs/shortcuts.md"
     assert_match "emask #{version}", shell_output("#{bin}/emask --version")
     config = testpath/"config.toml"
     assert_equal "#{config}\n", shell_output("#{bin}/emask --config #{config} config path")
