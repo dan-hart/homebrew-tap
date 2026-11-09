@@ -5,13 +5,13 @@ class Emask < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/dan-hart/emask/releases/download/v0.1.3/emask-0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "1f6ba984e994da264feb4d792ad939ea268699fe99b5c7d980286ab4ab8c0324"
+      url "https://github.com/dan-hart/emask/releases/download/v0.1.4/emask-0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "de38e71e3c955b8c55217afd4c86ca5093deb07c1c653d054017fbeb8c31ce93"
     end
 
     on_intel do
-      url "https://github.com/dan-hart/emask/releases/download/v0.1.3/emask-0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "d29b7bbdcbc9b04ad3b8b3542bb1a3ea5193b973b3798ca6260cee096ea28339"
+      url "https://github.com/dan-hart/emask/releases/download/v0.1.4/emask-0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "44fe0c42ec06de1814d1528cc1b986607f4611c584250a5804bf16a21692f35a"
     end
   end
 
@@ -19,8 +19,8 @@ class Emask < Formula
     depends_on arch: :x86_64
 
     on_intel do
-      url "https://github.com/dan-hart/emask/releases/download/v0.1.3/emask-0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "599ef97d3f440b7f17e2b246e6c538f9346f3a2a0e531b3369600188511b1a2b"
+      url "https://github.com/dan-hart/emask/releases/download/v0.1.4/emask-0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4f6ffa3944242b5197046dd4a8bc6e064975957e19bde85ac97818cd9049c839"
     end
   end
 
